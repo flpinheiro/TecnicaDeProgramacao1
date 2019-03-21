@@ -4,7 +4,7 @@ Grupo formado por:
 
 felipe Luís Pinheiro
 
-Gabriel 
+Gabriel Teixeira da Silva
 
 Paula 
 
