@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=TécnicaDeProgramação1.tex
 
 [Frame0_View0,0]
-TopLine=171
-Cursor=7518
+TopLine=213
+Cursor=9165
 
 [Frame1]
 Flags=0
