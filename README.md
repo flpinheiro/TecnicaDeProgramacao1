@@ -2,11 +2,13 @@
 
 Grupo formado por:
 
-felipe Luís Pinheiro
+Felipe Luís Pinheiro
 
 Gabriel Teixeira da Silva
 
-Paula 
+Paula Vycthória de Araújo Lima
+
+Rodrigo Belone Ramos
 
 ## [Locadora de Carros](SistemaDeControleDeLocadoraDeCarros/README.md)
 
