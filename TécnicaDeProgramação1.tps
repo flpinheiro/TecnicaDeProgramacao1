@@ -12,13 +12,13 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
 NormalPos.right=954
-NormalPos.bottom=487
+NormalPos.bottom=593
 Class=LaTeXView
 Document=TécnicaDeProgramação1.tex
 
 [Frame0_View0,0]
-TopLine=135
-Cursor=6403
+TopLine=0
+Cursor=679
 
 [Frame1]
 Flags=0
@@ -30,8 +30,8 @@ MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=32
 NormalPos.right=954
-NormalPos.bottom=487
-Class=LaTeXView
+NormalPos.bottom=593
+Class=BibTeXView
 Document=MyLib.bib
 
 [Frame1_View0,0]
