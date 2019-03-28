@@ -6,6 +6,7 @@
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{graphicx}
+\usepackage{subfigure}
 
 \title{Relatório Final de Técnica de Programação 1}
 \author{
@@ -157,16 +158,49 @@ Cenário principal de sucesso
 	\item Sistema cobra Multa do Cliente por danos ao patrimônio.
 \end{enumerate}
 
-Veja na figura \ref{fig:JogosCasosDeUso} o diagrama de caso de uso para esse problema
+Veja na figura \ref{fig:Jogo:casoDeUso} o diagrama de caso de uso para esse problema
 
 \begin{figure}%
-\centering
-\includegraphics[width=.7\columnwidth]{SistemaDeControleDeLocadoraDeJogos/CasoDeUso.jpg}%
+\center
+\includegraphics[width=.7\columnwidth]{SistemaDeControleDeLocadoraDeJogos/UML/UseCaseDiagram.jpg}%
 \caption{diagrama de uso para o sistema de controle de Jogos}%
-\label{fig:JogosCasosDeUso}%
+\label{fig:Jogo:casoDeUso}%
+\end{figure}
+
+\begin{figure}
+\center
+\subfigure[fig:jogo:adicionaEstoque][Adiciona Estoque]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeJogos/UML/adicionaEstoque.jpg}}
+\qquad
+\subfigure[fig:jogo:cobraMulta][Cobra Multa]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeJogos/UML/cobraMulta.jpg}}
+\noindent\newline
+\subfigure[fig:jogo:compraJogo][compra Multa]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeJogos/UML/compraJogo.jpg}}
+\qquad
+\subfigure[fig:jogo:criaConta][Cria Jogo]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeJogos/UML/criaConta.jpg}}
+\caption{Casos de uso Sistema de locadora de Jogos}
+\end{figure}
+
+\begin{figure}
+\center
+\subfigure[fig:jogo:devolve][Devolve Jogo]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeJogos/UML/devolve.jpg}}
+\qquad
+\subfigure[fig:jogo:escolheJogo][Escolhe Jogo]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeJogos/UML/escolheJogo.jpg}}
+\newline\noindent
+\subfigure[fig:jogo:pagaMulta][Paga MUlta]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeJogos/UML/pagaMulta.jpg}}
+\qquad
+\subfigure[fig:jogo:realizaAluguel][Realiza Aluguel]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeJogos/UML/realizaAluguel.jpg}}
+\caption{Casos de uso Sistema de locadora de Jogos}
 \end{figure}
 
 \subsubsection{Diagrama de Classes}
+
+\begin{figure}%
+\center
+\includegraphics[width=.7\columnwidth]{SistemaDeControleDeLocadoraDeJogos/UML/ClassDiagram.jpg}%
+\caption{Diagramade classe para o sistema de controle de jogos}%
+\label{fig:Jogo:classDeUso}%
+\end{figure}
+
+
 \subsubsection{Diagrama de Instâncias}
 \subsubsection{Diagrama de Sequências}
 
