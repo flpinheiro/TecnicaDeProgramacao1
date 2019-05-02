@@ -90,75 +90,80 @@ Cada jogo e consola possui seu preço diário de locação, sendo que um mesmo j
 
 A partir desse momento começamos a discutir e detalhar os projetos UML descritos acima
 
-\subsection{UML: Locadora de Carro}
 
-\subsubsection{Diagrama de Caso de Uso}
-\subsubsection{Diagrama de Classes}
-\subsubsection{Diagrama de Instâncias}
-\subsubsection{Diagrama de Sequências}
+\begin{figure}
+\center
+\subfigure[fig:carro:class][Diagrama de Classe]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeCarros/UML/Diagrama_de_classe.jpg}}
+\qquad
+\subfigure[fig:carro:inst][Diagrama de Instância]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeCarros/UML/Diagrama_de_Instancia.jpg}}
+\noindent\newline
+\subfigure[fig:carro:Sequencia][compra Multa]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeCarros/UML/Sequencia.jpg}}
+\qquad
+\subfigure[fig:jogo:criaConta][Cria Jogo]{\includegraphics[width=5cm]{SistemaDeControleDeLocadoraDeCarros/UML/UseCase_Diagram0.jpg}}
+\caption{Locadora de Carros}
+\end{figure}
 
-\subsection{UML: Sistema de Cinema}
 
-\subsubsection{Diagrama de Caso de Uso}
-\subsubsection{Diagrama de Classes}
-\subsubsection{Diagrama de Instâncias}
-\subsubsection{Diagrama de Sequências}
 
-\subsection{UML: Sistema de Controle de Hotelaria} 
 
-\subsubsection{Diagrama de Caso de Uso}
-\subsubsection{Diagrama de Classes}
-\subsubsection{Diagrama de Instâncias}
-\subsubsection{Diagrama de Sequências}
+\begin{figure}
+\center
+\subfigure[fig:hotel:class][Diagrama de Classe]{\includegraphics[width=5cm]{SistemaDeControleDeHotelaria/UML/Class_Diagram0.jpg}}
+\qquad
+\subfigure[fig:hotel:inst][Diagrama de Instância]{\includegraphics[width=5cm]{SistemaDeControleDeHotelaria/UML/Instance_Diagram0.jpg}}
+\noindent\newline
+\subfigure[fig:hotel:Sequencia][compra Multa]{\includegraphics[width=5cm]{SistemaDeControleDeHotelaria/UML/Sequence_Diagram0.jpg}}
+\qquad
+\subfigure[fig:hotel:criaConta][Cria Jogo]{\includegraphics[width=5cm]{SistemaDeControleDeHotelaria/UML/UseCase_Diagram0.jpg}}
+\caption{Sistema de controle de Hotelaria}
+\end{figure}
 
-\subsection{UML: Sistema de Locadora de Jogos de Vídeo Game}
 
-\subsubsection{Diagrama de Caso de Uso}
 
-\textbf{Aluguel de um Jogo}
-
-\textbf{Caso de uso Aluguel de um Jogo}\\
-Cenário principal de sucesso
-
-\begin{enumerate}
-\item 	Cliente navega pelo catalogo e seleciona o item para alugar
-\item 	Segue até a o caixa
-\item 	Cria conta do Cliente \label{enum:novoCliente}
-\item 	O cadastro do cliente é aceito
-\item 	Sistema apresenta informação completo do faturamento do empréstimo, incluindo preço e dias de empréstimo. \label{enum:finaliza}
-\item 	Cliente realiza o pagamento.
-\item 	Sistema registra o pagamento e autoriza o empréstimo ao cliente, é gerado recibo de empréstimo para o cliente. 
-\item 	Cliente leva o produto por X dias
-\item 	Após o período de locação o cliente retorna com o jogo para devolução
-\item 	Sistema verifica que está no prazo \label{enum:atraso}
-\item 	Sistema verifica integridade dos jogos \label{enum:dano}
-\item 	Sistema finaliza o empréstimo e emite recibo de devolução para o cliente.
-\end{enumerate}
-
-\textbf{Extensões}
-
-(\ref{enum:novoCliente}) Se o cliente é regular
-	\begin{enumerate}
-		\item Cliente já possui cadastro
-		\item Sistema procura por débitos anteriores.
-			\begin{enumerate}
-				\item Se identificado débitos anteriores, exige quitação do debito
-				\item Senão autoriza a nova Locação.
-			\end{enumerate}
-			\item pula para item \ref{enum:finaliza}.
-	\end{enumerate}
-	
-(\ref{enum:atraso}) Sistema identifica que o empréstimo passou do período de locação
-\begin{enumerate}
-	\item Sistema cobra multa do Cliente.
-\end{enumerate}
-
-(\ref{enum:dano}) Sistema verifica que os jogos estão danificados
-\begin{enumerate}
-	\item Sistema cobra Multa do Cliente por danos ao patrimônio.
-\end{enumerate}
-
-Veja na figura \ref{fig:Jogo:casoDeUso} o diagrama de caso de uso para esse problema
+%\textbf{Aluguel de um Jogo}
+%
+%\textbf{Caso de uso Aluguel de um Jogo}\\
+%Cenário principal de sucesso
+%
+%\begin{enumerate}
+%\item 	Cliente navega pelo catalogo e seleciona o item para alugar
+%\item 	Segue até a o caixa
+%\item 	Cria conta do Cliente \label{enum:novoCliente}
+%\item 	O cadastro do cliente é aceito
+%\item 	Sistema apresenta informação completo do faturamento do empréstimo, incluindo preço e dias de empréstimo. \label{enum:finaliza}
+%\item 	Cliente realiza o pagamento.
+%\item 	Sistema registra o pagamento e autoriza o empréstimo ao cliente, é gerado recibo de empréstimo para o cliente. 
+%\item 	Cliente leva o produto por X dias
+%\item 	Após o período de locação o cliente retorna com o jogo para devolução
+%\item 	Sistema verifica que está no prazo \label{enum:atraso}
+%\item 	Sistema verifica integridade dos jogos \label{enum:dano}
+%\item 	Sistema finaliza o empréstimo e emite recibo de devolução para o cliente.
+%\end{enumerate}
+%
+%\textbf{Extensões}
+%
+%(\ref{enum:novoCliente}) Se o cliente é regular
+	%\begin{enumerate}
+		%\item Cliente já possui cadastro
+		%\item Sistema procura por débitos anteriores.
+			%\begin{enumerate}
+				%\item Se identificado débitos anteriores, exige quitação do debito
+				%\item Senão autoriza a nova Locação.
+			%\end{enumerate}
+			%\item pula para item \ref{enum:finaliza}.
+	%\end{enumerate}
+	%
+%(\ref{enum:atraso}) Sistema identifica que o empréstimo passou do período de locação
+%\begin{enumerate}
+	%\item Sistema cobra multa do Cliente.
+%\end{enumerate}
+%
+%(\ref{enum:dano}) Sistema verifica que os jogos estão danificados
+%\begin{enumerate}
+	%\item Sistema cobra Multa do Cliente por danos ao patrimônio.
+%\end{enumerate}
+%
+%Veja na figura \ref{fig:Jogo:casoDeUso} o diagrama de caso de uso para esse problema
 
 \begin{figure}%
 \center
@@ -191,7 +196,7 @@ Veja na figura \ref{fig:Jogo:casoDeUso} o diagrama de caso de uso para esse prob
 \caption{Casos de uso Sistema de locadora de Jogos}
 \end{figure}
 
-\subsubsection{Diagrama de Classes}
+%\subsubsection{Diagrama de Classes}
 
 \begin{figure}%
 \center
@@ -201,10 +206,19 @@ Veja na figura \ref{fig:Jogo:casoDeUso} o diagrama de caso de uso para esse prob
 \end{figure}
 
 
-\subsubsection{Diagrama de Instâncias}
-\subsubsection{Diagrama de Sequências}
+%\subsubsection{Diagrama de Instância}
+\begin{figure}%
+\center
+\includegraphics[width=.7\columnwidth]{SistemaDeControleDeLocadoraDeJogos/UML/InsstaceDiagram.jpg}%
+\caption{Diagramade classe para o sistema de controle de jogos}%
+\label{fig:Jogo:classDeUso}%
+\end{figure}
 
 
+%\subsubsection{Diagrama de Instâncias}
+%\subsubsection{Diagrama de Sequências}
+
+\pagebreak
 \bibliographystyle{plain}
 \bibliography{MyLib} 
 \end{document} 
