@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnBCineFlix</name>
+    </assembly>
+    <members>
+        <member name="M:UnBCineFlix.Modelo.Person.Create">
+            <summary>
+            Create Function, must be overrided
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Modelo.Person.Read">
+            <summary>
+            Read function, must be overrided
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Modelo.Person.Update">
+            <summary>
+            Update function, must be overrided
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Modelo.Person.Delete">
+            <summary>
+            Delete function, must be overrided
+            </summary>
+        </member>
+    </members>
+</doc>

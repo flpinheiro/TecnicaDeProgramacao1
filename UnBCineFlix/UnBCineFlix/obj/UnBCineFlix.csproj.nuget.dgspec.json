@@ -47,6 +47,18 @@
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "MySql.Data.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.16, )"
+            },
+            "MySql.Web": {
+              "target": "Package",
+              "version": "[8.0.16, )"
             }
           },
           "imports": [

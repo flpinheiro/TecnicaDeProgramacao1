@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UnBCineFlix.Modelo
+namespace UnBCineFlix.Model
 {
     class Employee : Person
     {

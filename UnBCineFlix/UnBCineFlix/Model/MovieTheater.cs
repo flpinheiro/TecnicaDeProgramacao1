@@ -2,15 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace UnBCineFlix.Modelo
+namespace UnBCineFlix.Model
 {
-    class Session
+    class MovieTheater
     {
-        public int SessionID { get; set; }
-        public DateTime SessionDay { get; set; }
-        public MovieTheater MovieTheater { get; set; }
-        public Movie Movie { get; set; }
-
+        public int MovieTheaterID { get; set; }
+        public int MyProperty { get; set; }
 
         public void Create()
         {

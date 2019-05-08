@@ -3,6 +3,20 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
+    <StartupObject></StartupObject>
+    <Company>CalangoSoft</Company>
+    <Authors>Felipe Luís Pinheiro, Gabriel Teixeira da Silva, Paula Vycthória de Araújo Lima, Rodrigo Belone Ramos.</Authors>
+    <Description>Sistema de Gerenciamento de Cinema</Description>
+    <RepositoryUrl>https://github.com/flpinheiro/TecnicaDeProgramacao1.git</RepositoryUrl>
+    <RepositoryType>Púbico</RepositoryType>
+    <PackageTags>Cinema, Movie, OpenSource, Open, código aberto, Licença GNU, GNU, free,</PackageTags>
+    <NeutralLanguage>en</NeutralLanguage>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>C:\Users\flpin\OneDrive\computação\2019-01\TecnicaDeProgramacao1\UnBCineFlix\UnBCineFlix\UnBCineFlix.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>
