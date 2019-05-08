@@ -19,4 +19,14 @@
     <DocumentationFile>C:\Users\flpin\OneDrive\computação\2019-01\TecnicaDeProgramacao1\UnBCineFlix\UnBCineFlix\UnBCineFlix.xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Test\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="8.0.16" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.16" />
+    <PackageReference Include="MySql.Web" Version="8.0.16" />
+  </ItemGroup>
+
 </Project>
