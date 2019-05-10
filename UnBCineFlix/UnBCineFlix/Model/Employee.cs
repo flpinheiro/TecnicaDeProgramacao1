@@ -1,31 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace UnBCineFlix.Model
 {
-    class Employee : Person
+    /// <summary>
+    /// Employee -> Define um empregado
+    /// </summary>
+    public class Employee : Person
     {
-        public string Role { get; set; }
+        /// <summary>
+        /// matricula do empregado
+        /// </summary>
+        [Required]
+        public int Cod { get; set; }
 
-        public override void Create()
-        {
-            throw new NotImplementedException();
-        }
+        /// <summary>
+        /// password do empregado
+        /// </summary>
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
 
-        public override void Delete()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Read()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Update()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -1,31 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace UnBCineFlix.Model
 {
-    class Client : Person
+    /// <summary>
+    /// Classe Client -> Define um cliente na aplicação
+    /// </summary>
+    public class Client : Person
     {
-        public int CPF { get; set; }
+        /// <summary>
+        /// Email do Cliente
+        /// </summary>
+        [DataType(DataType.EmailAddress)]
+        public string Email { get; set; }
+        /// <summary>
+        /// Senha do cliente
+        /// </summary>
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
 
-        public override void Create()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Delete()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Read()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Update()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -1,35 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace UnBCineFlix.Model
 {
-    class Session
+    /// <summary>
+    /// classe Session -> define uma sessão de cinema
+    /// </summary>
+    public class Session
     {
-        public int SessionID { get; set; }
+        /// <summary>
+        /// id da sessão no sistema de banco de dados
+        /// </summary>
+        [Key]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// Dia e hora da sessão do filme
+        /// </summary>
+        [Display(Name = "Session Day Time")]
+        [DataType(DataType.DateTime)]
+        [Required]
         public DateTime SessionDay { get; set; }
+
+        /// <summary>
+        /// Sala na qual a sessão irá acontecer
+        /// </summary>
+        [Required]
+        [DataType(DataType.Custom)]
         public MovieTheater MovieTheater { get; set; }
+        /// <summary>
+        /// Filme a ser exibido na sessão
+        /// </summary>
+        [Required]
+        [DataType(DataType.Custom)]
         public Movie Movie { get; set; }
-
-
-        public void Create()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delete()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Read()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

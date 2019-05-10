@@ -1,32 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace UnBCineFlix.Model
 {
-    class MovieTheater
+    /// <summary>
+    /// Classe MovieTheater -> define uma sala de cinema
+    /// </summary>
+    public class MovieTheater
     {
-        public int ID { get; set; }
+        /// <summary>
+        /// Id da sala de cinema no banco de dados
+        /// </summary>
+        [KeyAttribute]
+        public int Id { get; set; }
+        /// <summary>
+        /// Numero da sala de cinema
+        /// </summary>
+        [Required]
         public int Number { get; set; }
-
-        public void Create()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delete()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Read()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

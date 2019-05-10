@@ -1,36 +1,65 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations;
 
-namespace UnBCineFlix.Modelo
+namespace UnBCineFlix.Model
 {
-    class Movie
+    /// <summary>
+    /// Class Movie -> define um Filme a ser exibido no Cinema
+    /// </summary>
+    public class Movie
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-        public DateTime Duration { get; set; }
-        public DateTime RealeseDate { get; set; }
-        public string Information { get; set; }
+        /// <summary>
+        /// Id do filme no sistema de banco de dados
+        /// </summary>
+        [Key]
+        public int Id { get; set; }
+
+        /// <summary>
+        /// titulo do filme
+        /// </summary>
+        [StringLength(100, MinimumLength = 3)]
+        [Required]
+        public string Title { get; set; }
+
+        /// <summary>
+        /// Data de lançamento
+        /// </summary>
+        [Display(Name = "Release Date")]
+        [DataType(DataType.Date)]
+        public DateTime ReleaseDate { get; set; }
+
+        //[Range(1, 100)]
+        //[DataType(DataType.Currency)]
+        //[Column(TypeName = "decimal(18, 2)")]
+        //public decimal Price { get; set; }
+
+        /// <summary>
+        /// Genero do Filme
+        /// </summary>
+        [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
+        [Required]
+        [StringLength(30)]
+        public string Genre { get; set; }
+
+        /// <summary>
+        /// Classificação indicativa
+        /// </summary>
+        [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
+        [StringLength(5)]
+        [Required]
         public string Rating { get; set; }
 
-        public void Create()
-        {
-            throw new NotImplementedException();
-        }
+        /// <summary>
+        /// duração do filme. 
+        /// </summary>
+        [DataType(DataType.Duration)]
+        public int Duration { get; set; }
 
-        public void Delete()
-        {
-            throw new NotImplementedException();
-        }
+        /// <summary>
+        /// Sinopse do filme
+        /// </summary>
+        [DataType(DataType.MultilineText)]
+        public string Synopsis { get; set; }
 
-        public void Read()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

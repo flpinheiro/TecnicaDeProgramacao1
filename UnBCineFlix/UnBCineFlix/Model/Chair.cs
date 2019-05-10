@@ -1,46 +1,34 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.ComponentModel.DataAnnotations;
 
 namespace UnBCineFlix.Model
 {
-    class Chair
+    /// <summary>
+    /// Classe Chair-> Define uma cadeira de cinema com colunas e fileiras
+    /// </summary>
+    public class Chair
     {
-        public int ID { get; set; }
-        //Coluna da cadeira no cinema
+        /// <summary>
+        /// identificação da cadeira no banco de dados
+        /// </summary>
+        public int Id { get; set; }
+        /// <summary>
+        /// Coluna da cadeira no cinema
+        /// </summary>
+        [Required]
         public int Column { get; set; }
-        //fileira da cadeira no cinema
-        public char Row { get; set; }
-        //status da cadeira na sessão do cinema
-        //true->vendido
-        //false->não vendido
+        /// <summary>
+        /// fileira da cadeira no cinema
+        /// </summary>
+        [Required]
+        public int Row { get; set; }
+
+        /// <summary>
+        /// status da cadeira na sessão do cinema
+        /// true  ->     vendido
+        /// false -> não vendido
+        /// </summary>
+        [Required]
         public bool Status { get; set; }
-
-        public Chair(int column, char row, bool status = false)
-        {
-            Column = column;
-            Row = row;
-            Status = status; 
-        }
-
-        public void Create()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delete()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Read()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

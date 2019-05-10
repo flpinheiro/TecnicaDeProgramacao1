@@ -4,24 +4,104 @@
         <name>UnBCineFlix</name>
     </assembly>
     <members>
-        <member name="M:UnBCineFlix.Modelo.Person.Create">
+        <member name="T:UnBCineFlix.Model.Movie">
+            <summary>
+            Class Movie -> define um Filme a ser exibido no Cinema
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Movie.Id">
+            <summary>
+            Id do filme no sistema de banco de dados
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Movie.Title">
+            <summary>
+            titulo do filme
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Movie.ReleaseDate">
+            <summary>
+            Data de lançamento
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Movie.Genre">
+            <summary>
+            Genero do Filme
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Movie.Rating">
+            <summary>
+            Classificação indicativa
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Movie.Duration">
+            <summary>
+            duração do filme. 
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Movie.Synopsis">
+            <summary>
+            Sinopse do filme
+            </summary>
+        </member>
+        <member name="T:UnBCineFlix.Model.MovieTheater">
+            <summary>
+            Classe MovieTheater -> define uma sala de cinema
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.MovieTheater.Id">
+            <summary>
+            Id da sala de cinema no banco de dados
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.MovieTheater.Number">
+            <summary>
+            Numero da sala de cinema
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Model.Person.Create">
             <summary>
             Create Function, must be overrided
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Modelo.Person.Read">
+        <member name="M:UnBCineFlix.Model.Person.Read">
             <summary>
             Read function, must be overrided
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Modelo.Person.Update">
+        <member name="M:UnBCineFlix.Model.Person.Update">
             <summary>
             Update function, must be overrided
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Modelo.Person.Delete">
+        <member name="M:UnBCineFlix.Model.Person.Delete">
             <summary>
             Delete function, must be overrided
+            </summary>
+        </member>
+        <member name="T:UnBCineFlix.Model.Session">
+            <summary>
+            classe Session -> define uma sessão de cinema
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Session.Id">
+            <summary>
+            id da sessão no sistema de banco de dados
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Session.SessionDay">
+            <summary>
+            Dia e hora da sessão do filme
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Session.MovieTheater">
+            <summary>
+            Sala na qual a sessão irá acontecer
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Session.Movie">
+            <summary>
+            Filme a ser exibido na sessão
             </summary>
         </member>
     </members>
