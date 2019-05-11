@@ -4,6 +4,71 @@
         <name>UnBCineFlix</name>
     </assembly>
     <members>
+        <member name="T:UnBCineFlix.Model.Chair">
+            <summary>
+            Classe Chair-> Define uma cadeira de cinema com colunas e fileiras
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Chair.Id">
+            <summary>
+            identificação da cadeira no banco de dados
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Chair.Column">
+            <summary>
+            Coluna da cadeira no cinema
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Chair.Row">
+            <summary>
+            fileira da cadeira no cinema
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Chair.Status">
+            <summary>
+            status da cadeira na sessão do cinema
+            true  ->     vendido
+            false -> não vendido
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Model.Chair.#ctor(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Construtor padrão para Chair
+            </summary>
+            <param name="row">Número da fileira da cadeira</param>
+            <param name="column">Número da coluna da cadeira</param>
+            <param name="status">Status da cadeira, true:vendida, false:não vendia(valor padrão)</param>
+        </member>
+        <member name="T:UnBCineFlix.Model.Client">
+            <summary>
+            Classe Client -> Define um cliente na aplicação
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Client.Email">
+            <summary>
+            Email do Cliente
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Client.Password">
+            <summary>
+            Senha do cliente
+            </summary>
+        </member>
+        <member name="T:UnBCineFlix.Model.Employee">
+            <summary>
+            Employee -> Define um empregado
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Employee.Cod">
+            <summary>
+            matricula do empregado
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Employee.Password">
+            <summary>
+            password do empregado
+            </summary>
+        </member>
         <member name="T:UnBCineFlix.Model.Movie">
             <summary>
             Class Movie -> define um Filme a ser exibido no Cinema
@@ -59,24 +124,76 @@
             Numero da sala de cinema
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Person.Create">
+        <member name="F:UnBCineFlix.Model.MovieTheater.chairs">
             <summary>
-            Create Function, must be overrided
+            Lista de cadeiras da sala de cinema
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Person.Read">
+        <member name="P:UnBCineFlix.Model.MovieTheater.QtdRow">
             <summary>
-            Read function, must be overrided
+            Quantidade de fileiras que existe na sala
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Person.Update">
+        <member name="P:UnBCineFlix.Model.MovieTheater.QtdColumn">
             <summary>
-            Update function, must be overrided
+            Quantidade de colunas que exste na sala
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Person.Delete">
+        <member name="M:UnBCineFlix.Model.MovieTheater.#ctor(System.Int32,System.Int32,System.Int32)">
             <summary>
-            Delete function, must be overrided
+            Construtor padrão da sala de cinema
+            </summary>
+            <param name="qtdRow"></param>
+            <param name="qtdColumn"></param>
+            <param name="number">Numero da sala</param>
+            <exception cref="T:System.ArgumentException">Lança se o argumento for igual ou menor que zero.</exception>
+            
+            
+        </member>
+        <member name="M:UnBCineFlix.Model.MovieTheater.AddChair(UnBCineFlix.Model.Chair)">
+            <summary>
+            Adiciona uma cadeira a sala de espetaculo
+            </summary>
+            <param name="chair"></param>
+            <exception cref="T:System.ArgumentException">Lança essa exceção se a posicão da cadeira for maior do que a quantidade de colunas e fileiras da sala</exception>
+        </member>
+        <member name="M:UnBCineFlix.Model.MovieTheater.ToString">
+            <summary>
+            Escreve na tela a configuração atual da sala, sendo
+            |   | -> lugar sem cadeira
+            |[ ]| -> cadeira livre para ser vendida
+            |[-]| -> cadeira ocupaa, já vendida
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="T:UnBCineFlix.Model.Person">
+            <summary>
+            Classe Person -> define uma classe abstrata de pessoa
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Person.Id">
+            <summary>
+            identificador único de pessoa no banco de dados
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Person.Name">
+            <summary>
+            Nome de uma pessoa
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Person.CPF">
+            <summary>
+            CPF de pessoa
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Person.TelePhone">
+            <summary>
+            telefone da pessoa
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Person.BirthDay">
+            <summary>
+            Data de aniversário da pessoa
             </summary>
         </member>
         <member name="T:UnBCineFlix.Model.Session">

@@ -20,6 +20,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="microsoft.NETCore" Version="5.0.2" />
     <PackageReference Include="MySql.Data" Version="8.0.16" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.16" />
     <PackageReference Include="MySql.Web" Version="8.0.16" />

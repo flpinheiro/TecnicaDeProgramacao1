@@ -30,5 +30,22 @@ namespace UnBCineFlix.Model
         /// </summary>
         [Required]
         public bool Status { get; set; }
+
+        /// <summary>
+        /// Construtor padrão para Chair
+        /// </summary>
+        /// <param name="row">Número da fileira da cadeira</param>
+        /// <param name="column">Número da coluna da cadeira</param>
+        /// <param name="status">Status da cadeira, true:vendida, false:não vendia(valor padrão)</param>
+        public Chair(int row, int column, bool status = false)
+        {
+            if (row<0||column<0)
+            {
+                throw new ArgumentException("O número da fileira da cadeira ou da coluna da cadeira não pode ser negativo");
+            }
+            Row = row;
+            Column = column;
+            Status = status;
+        }
     }
 }
