@@ -4,6 +4,37 @@
         <name>UnBCineFlix</name>
     </assembly>
     <members>
+        <member name="T:UnBCineFlix.Model.Artist">
+            <summary>
+            Classe Artist -> define um artista que participa de um filme, ou um diretor.
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Artist.Id">
+            <summary>
+            identificação do artista no banco de dados
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Artist.Name">
+            <summary>
+            Nome do artista
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Artist.BirthDay">
+            <summary>
+            Data de nascimento do artista
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Model.Artist.#ctor">
+            <summary>
+            Construtor padrão
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Model.Artist.#ctor(System.String)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="name">Nome do artista</param>
+        </member>
         <member name="T:UnBCineFlix.Model.Chair">
             <summary>
             Classe Chair-> Define uma cadeira de cinema com colunas e fileiras
@@ -109,6 +140,27 @@
             Sinopse do filme
             </summary>
         </member>
+        <member name="F:UnBCineFlix.Model.Movie.ArtistList">
+            <summary>
+            Lista de artistas que participaram do filme
+            </summary>
+        </member>
+        <member name="F:UnBCineFlix.Model.Movie.DirectorList">
+            <summary>
+            Lista de diretores que participaram do filme
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Model.Movie.#ctor">
+            <summary>
+            Construtor padrão
+            </summary>
+        </member>
+        <member name="M:UnBCineFlix.Model.Movie.ToString">
+            <summary>
+            Converte o Movie para uma string
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:UnBCineFlix.Model.MovieTheater">
             <summary>
             Classe MovieTheater -> define uma sala de cinema
@@ -124,7 +176,7 @@
             Numero da sala de cinema
             </summary>
         </member>
-        <member name="F:UnBCineFlix.Model.MovieTheater.chairs">
+        <member name="P:UnBCineFlix.Model.MovieTheater.Chairs">
             <summary>
             Lista de cadeiras da sala de cinema
             </summary>

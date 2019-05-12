@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text;
+
 namespace UnBCineFlix.Model
 {
     /// <summary>
@@ -25,6 +28,7 @@ namespace UnBCineFlix.Model
         /// </summary>
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
+        [Required]
         public DateTime ReleaseDate { get; set; }
 
         //[Range(1, 100)]
@@ -52,13 +56,63 @@ namespace UnBCineFlix.Model
         /// duração do filme. 
         /// </summary>
         [DataType(DataType.Duration)]
+        [Required]
         public int Duration { get; set; }
 
         /// <summary>
         /// Sinopse do filme
         /// </summary>
         [DataType(DataType.MultilineText)]
+        [Required]
         public string Synopsis { get; set; }
 
+        /// <summary>
+        /// Lista de artistas que participaram do filme
+        /// </summary>
+        public List<Artist> ArtistList;
+
+        /// <summary>
+        /// Lista de diretores que participaram do filme
+        /// </summary>
+        public List<Artist> DirectorList;
+
+        /// <summary>
+        /// Construtor padrão
+        /// </summary>
+        public Movie()
+        {
+            ArtistList = new List<Artist>();
+            DirectorList = new List<Artist>();
+        }
+
+        /// <summary>
+        /// Converte o Movie para uma string
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            var ret = new StringBuilder();
+            ret.AppendLine(Title);
+            ret.AppendLine($"{ReleaseDate.Year}, {Genre} - {Rating}");
+            ret.AppendLine(Synopsis);
+            ret.Append("Estrelando");
+            foreach (var artist in ArtistList)
+            {
+                if (artist !=null)
+                {
+                    ret.Append($" - {artist.Name} ");
+                }
+            }
+            ret.AppendLine();
+            ret.Append("Dirigido por");
+            foreach (var director in  DirectorList)
+            {
+                if (director != null)
+                {
+                    ret.Append($" - {director.Name} ");
+                }
+            }
+            return ret.ToString();
+        }
     }
 }

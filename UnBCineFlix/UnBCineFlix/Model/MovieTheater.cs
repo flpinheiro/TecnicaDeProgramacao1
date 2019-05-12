@@ -20,18 +20,20 @@ namespace UnBCineFlix.Model
         [Required]
         public int Number { get; set; }
 
+        private Chair[][] _chairs;
         /// <summary>
         /// Lista de cadeiras da sala de cinema
         /// </summary>
-        private Chair[][] chairs;
-
+        public Chair[][] Chairs { get => _chairs; private set => _chairs = value; }
         /// <summary>
         /// Quantidade de fileiras que existe na sala
         /// </summary>
+        [Required]
         public int QtdRow { get; }
         /// <summary>
         /// Quantidade de colunas que exste na sala
         /// </summary>
+        [Required]
         public int QtdColumn { get; }
         /// <summary>
         /// Construtor padrão da sala de cinema
@@ -44,17 +46,18 @@ namespace UnBCineFlix.Model
         /// 
         public MovieTheater(int qtdRow, int qtdColumn, int number = 1)
         {
-            if (qtdRow <=0 || qtdColumn <= 0)
+            if (qtdRow <=0 || qtdColumn <= 0||number <=0)
             {
                 throw new ArgumentException("O número de fileiras ou de colunas não pode ser nulo ou negativo");
             }
             QtdColumn = qtdColumn;
             QtdRow = qtdRow;
+            Number = number;
             //inicia a lista de cadiras
-            chairs = new Chair[qtdRow][];
+            _chairs = new Chair[qtdRow][];
             for (int i = 0; i < qtdRow; i++)
             {
-                chairs[i] = new Chair[qtdColumn];
+                _chairs[i] = new Chair[qtdColumn];
             }
         }
 
@@ -69,7 +72,7 @@ namespace UnBCineFlix.Model
             {
                 throw new ArgumentException("A sala não pode alocar essa cadeira");
             }
-            chairs[chair.Row][chair.Column] = chair;
+            _chairs[chair.Row][chair.Column] = chair;
         }
         /// <summary>
         /// Escreve na tela a configuração atual da sala, sendo
@@ -81,6 +84,7 @@ namespace UnBCineFlix.Model
         public override string ToString()
         {
             var ret = new StringBuilder();
+            ret.AppendLine($"Sala Número:{Number}");
             ret.Append("|   |");
             for (int j = 0; j < QtdColumn; j++)
             {
@@ -100,13 +104,13 @@ namespace UnBCineFlix.Model
                 ret.Append($"| {(char)(i + 65)} |");
                 for (int j = 0; j < QtdColumn; j++)
                 {
-                    if (chairs[i][j] == null)
+                    if (_chairs[i][j] == null)
                     {
                         ret.Append("|     |");
                     }
                     else
                     {
-                        if (chairs[i][j].Status)
+                        if (_chairs[i][j].Status)
                         {
                             ret.Append("|[---]|");
                         }
