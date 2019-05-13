@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace UnBCineFlix.Model
@@ -23,6 +24,7 @@ namespace UnBCineFlix.Model
         /// <summary>
         /// CPF de pessoa
         /// </summary>
+        [Required]
         public int CPF { get; set; }
 
         /// <summary>
@@ -35,6 +37,13 @@ namespace UnBCineFlix.Model
         /// </summary>
         [DataType(DataType.Date)]
         public DateTime BirthDay { get; set; }
+
+        public List<Address> AddressList;
+
+        public Person()
+        {
+            AddressList = new List<Address>();
+        }
 
     }
 }

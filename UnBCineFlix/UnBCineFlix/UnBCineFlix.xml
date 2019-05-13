@@ -4,6 +4,16 @@
         <name>UnBCineFlix</name>
     </assembly>
     <members>
+        <member name="T:UnBCineFlix.Model.Address">
+            <summary>
+            Classe Address -> define uma classe de endreço pessoal
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Model.Address.Id">
+            <summary>
+            identificador da classe no banco de dados
+            </summary>
+        </member>
         <member name="T:UnBCineFlix.Model.Artist">
             <summary>
             Classe Artist -> define um artista que participa de um filme, ou um diretor.
@@ -246,6 +256,22 @@
         <member name="P:UnBCineFlix.Model.Person.BirthDay">
             <summary>
             Data de aniversário da pessoa
+            </summary>
+        </member>
+        <member name="T:UnBCineFlix.Model.Rating">
+            <summary>
+            G – General Audiences - All ages admitted.Nothing that would offend parents for viewing by children.
+            PG – Parental Guidance Suggested - Some material may not be suitable for children.Parents urged to give "parental guidance". May contain some material parents might not like for their young children.
+            PG-13 – Parents Strongly Cautioned - Some material may be inappropriate for children under 13. Parents are urged to be cautious.Some material may be inappropriate for pre-teenagers.
+            R – Restricted - Under 17 requires accompanying parent or adult guardian. Contains some adult material. Parents are urged to learn more about the film before taking their young children with them.
+            NC-17 – Adults Only - No One 17 and Under Admitted.Clearly adult. Children are not admitted.
+            Versão em portugues BR
+            Livre
+            NR 10 - não recomendado para menores de 10 anos
+            NR 12 - Não recomendado para menores de 12 anos
+            NR 14 - Não recomendado para menores de 14 anos
+            NR 16 - Não recomendado para menores de 16 anos
+            NR 18 - Não recomendado para menores de 18 anos.
             </summary>
         </member>
         <member name="T:UnBCineFlix.Model.Session">

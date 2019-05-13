@@ -12,11 +12,13 @@ namespace UnBCineFlix.Model
         /// Email do Cliente
         /// </summary>
         [DataType(DataType.EmailAddress)]
+        [Required]
         public string Email { get; set; }
         /// <summary>
         /// Senha do cliente
         /// </summary>
         [DataType(DataType.Password)]
+        [Required]
         public string Password { get; set; }
 
     }

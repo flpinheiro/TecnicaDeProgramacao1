@@ -47,10 +47,8 @@ namespace UnBCineFlix.Model
         /// <summary>
         /// Classificação indicativa
         /// </summary>
-        [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
-        [StringLength(5)]
         [Required]
-        public string Rating { get; set; }
+        public Rating Rating { get; set; }
 
         /// <summary>
         /// duração do filme. 

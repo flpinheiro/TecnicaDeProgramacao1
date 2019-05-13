@@ -53,7 +53,7 @@ namespace UnBCineFlix.Model
             QtdColumn = qtdColumn;
             QtdRow = qtdRow;
             Number = number;
-            //inicia a lista de cadiras
+            //inicia a lista de cadeiras
             _chairs = new Chair[qtdRow][];
             for (int i = 0; i < qtdRow; i++)
             {

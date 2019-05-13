@@ -17,7 +17,7 @@ namespace UnBCineFlix
             movie.Title = "It, a coisa";
             movie.ReleaseDate = new DateTime(2019,09,5);
             movie.Genre = "Terror, Thriller";
-            movie.Rating = "pg-17";
+            movie.Rating = new Rating("NC-17", 17);
             movie.Synopsis = "Vinte e sete anos depos, o clube dos perdedores cresceu e se mudou, depois de um telefonema devastador eles irão retornar.";
             movie.ArtistList.Add(new Artist("james McAvoy"));
             movie.ArtistList.Add(new Artist("Javier Botet"));
