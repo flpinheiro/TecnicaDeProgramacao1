@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace UnBCineFlix.Model
+namespace UnBCineFlix.Models
 {
     /// <summary>
     /// Classe Client -> Define um cliente na aplicação

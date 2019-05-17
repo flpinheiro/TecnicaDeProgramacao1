@@ -4,75 +4,75 @@
         <name>UnBCineFlix</name>
     </assembly>
     <members>
-        <member name="T:UnBCineFlix.Model.Address">
+        <member name="T:UnBCineFlix.Models.Address">
             <summary>
             Classe Address -> define uma classe de endreço pessoal
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Address.Id">
+        <member name="P:UnBCineFlix.Models.Address.Id">
             <summary>
             identificador da classe no banco de dados
             </summary>
         </member>
-        <member name="T:UnBCineFlix.Model.Artist">
+        <member name="T:UnBCineFlix.Models.Artist">
             <summary>
             Classe Artist -> define um artista que participa de um filme, ou um diretor.
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Artist.Id">
+        <member name="P:UnBCineFlix.Models.Artist.Id">
             <summary>
             identificação do artista no banco de dados
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Artist.Name">
+        <member name="P:UnBCineFlix.Models.Artist.Name">
             <summary>
             Nome do artista
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Artist.BirthDay">
+        <member name="P:UnBCineFlix.Models.Artist.BirthDay">
             <summary>
             Data de nascimento do artista
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Artist.#ctor">
+        <member name="M:UnBCineFlix.Models.Artist.#ctor">
             <summary>
             Construtor padrão
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Artist.#ctor(System.String)">
+        <member name="M:UnBCineFlix.Models.Artist.#ctor(System.String)">
             <summary>
             Construtor
             </summary>
             <param name="name">Nome do artista</param>
         </member>
-        <member name="T:UnBCineFlix.Model.Chair">
+        <member name="T:UnBCineFlix.Models.Chair">
             <summary>
             Classe Chair-> Define uma cadeira de cinema com colunas e fileiras
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Chair.Id">
+        <member name="P:UnBCineFlix.Models.Chair.Id">
             <summary>
             identificação da cadeira no banco de dados
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Chair.Column">
+        <member name="P:UnBCineFlix.Models.Chair.Column">
             <summary>
             Coluna da cadeira no cinema
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Chair.Row">
+        <member name="P:UnBCineFlix.Models.Chair.Row">
             <summary>
             fileira da cadeira no cinema
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Chair.Status">
+        <member name="P:UnBCineFlix.Models.Chair.Status">
             <summary>
             status da cadeira na sessão do cinema
             true  ->     vendido
             false -> não vendido
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Chair.#ctor(System.Int32,System.Int32,System.Boolean)">
+        <member name="M:UnBCineFlix.Models.Chair.#ctor(System.Int32,System.Int32,System.Boolean)">
             <summary>
             Construtor padrão para Chair
             </summary>
@@ -80,128 +80,128 @@
             <param name="column">Número da coluna da cadeira</param>
             <param name="status">Status da cadeira, true:vendida, false:não vendia(valor padrão)</param>
         </member>
-        <member name="T:UnBCineFlix.Model.Client">
+        <member name="T:UnBCineFlix.Models.Client">
             <summary>
             Classe Client -> Define um cliente na aplicação
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Client.Email">
+        <member name="P:UnBCineFlix.Models.Client.Email">
             <summary>
             Email do Cliente
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Client.Password">
+        <member name="P:UnBCineFlix.Models.Client.Password">
             <summary>
             Senha do cliente
             </summary>
         </member>
-        <member name="T:UnBCineFlix.Model.Employee">
+        <member name="T:UnBCineFlix.Models.Employee">
             <summary>
             Employee -> Define um empregado
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Employee.Cod">
+        <member name="P:UnBCineFlix.Models.Employee.Cod">
             <summary>
             matricula do empregado
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Employee.Password">
+        <member name="P:UnBCineFlix.Models.Employee.Password">
             <summary>
             password do empregado
             </summary>
         </member>
-        <member name="T:UnBCineFlix.Model.Movie">
+        <member name="T:UnBCineFlix.Models.Movie">
             <summary>
             Class Movie -> define um Filme a ser exibido no Cinema
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Movie.Id">
+        <member name="P:UnBCineFlix.Models.Movie.Id">
             <summary>
             Id do filme no sistema de banco de dados
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Movie.Title">
+        <member name="P:UnBCineFlix.Models.Movie.Title">
             <summary>
             titulo do filme
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Movie.ReleaseDate">
+        <member name="P:UnBCineFlix.Models.Movie.ReleaseDate">
             <summary>
             Data de lançamento
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Movie.Genre">
+        <member name="P:UnBCineFlix.Models.Movie.Genre">
             <summary>
             Genero do Filme
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Movie.Rating">
+        <member name="P:UnBCineFlix.Models.Movie.Rating">
             <summary>
             Classificação indicativa
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Movie.Duration">
+        <member name="P:UnBCineFlix.Models.Movie.Duration">
             <summary>
             duração do filme. 
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Movie.Synopsis">
+        <member name="P:UnBCineFlix.Models.Movie.Synopsis">
             <summary>
             Sinopse do filme
             </summary>
         </member>
-        <member name="F:UnBCineFlix.Model.Movie.ArtistList">
+        <member name="F:UnBCineFlix.Models.Movie.ArtistList">
             <summary>
             Lista de artistas que participaram do filme
             </summary>
         </member>
-        <member name="F:UnBCineFlix.Model.Movie.DirectorList">
+        <member name="F:UnBCineFlix.Models.Movie.DirectorList">
             <summary>
             Lista de diretores que participaram do filme
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Movie.#ctor">
+        <member name="M:UnBCineFlix.Models.Movie.#ctor">
             <summary>
             Construtor padrão
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.Movie.ToString">
+        <member name="M:UnBCineFlix.Models.Movie.ToString">
             <summary>
             Converte o Movie para uma string
             </summary>
             <returns></returns>
         </member>
-        <member name="T:UnBCineFlix.Model.MovieTheater">
+        <member name="T:UnBCineFlix.Models.MovieTheater">
             <summary>
             Classe MovieTheater -> define uma sala de cinema
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.MovieTheater.Id">
+        <member name="P:UnBCineFlix.Models.MovieTheater.Id">
             <summary>
             Id da sala de cinema no banco de dados
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.MovieTheater.Number">
+        <member name="P:UnBCineFlix.Models.MovieTheater.Number">
             <summary>
             Numero da sala de cinema
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.MovieTheater.Chairs">
+        <member name="P:UnBCineFlix.Models.MovieTheater.Chairs">
             <summary>
             Lista de cadeiras da sala de cinema
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.MovieTheater.QtdRow">
+        <member name="P:UnBCineFlix.Models.MovieTheater.QtdRow">
             <summary>
             Quantidade de fileiras que existe na sala
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.MovieTheater.QtdColumn">
+        <member name="P:UnBCineFlix.Models.MovieTheater.QtdColumn">
             <summary>
             Quantidade de colunas que exste na sala
             </summary>
         </member>
-        <member name="M:UnBCineFlix.Model.MovieTheater.#ctor(System.Int32,System.Int32,System.Int32)">
+        <member name="M:UnBCineFlix.Models.MovieTheater.#ctor(System.Int32,System.Int32,System.Int32)">
             <summary>
             Construtor padrão da sala de cinema
             </summary>
@@ -212,14 +212,14 @@
             
             
         </member>
-        <member name="M:UnBCineFlix.Model.MovieTheater.AddChair(UnBCineFlix.Model.Chair)">
+        <member name="M:UnBCineFlix.Models.MovieTheater.AddChair(UnBCineFlix.Models.Chair)">
             <summary>
             Adiciona uma cadeira a sala de espetaculo
             </summary>
             <param name="chair"></param>
             <exception cref="T:System.ArgumentException">Lança essa exceção se a posicão da cadeira for maior do que a quantidade de colunas e fileiras da sala</exception>
         </member>
-        <member name="M:UnBCineFlix.Model.MovieTheater.ToString">
+        <member name="M:UnBCineFlix.Models.MovieTheater.ToString">
             <summary>
             Escreve na tela a configuração atual da sala, sendo
             |   | -> lugar sem cadeira
@@ -228,37 +228,37 @@
             </summary>
             <returns>string</returns>
         </member>
-        <member name="T:UnBCineFlix.Model.Person">
+        <member name="T:UnBCineFlix.Models.Person">
             <summary>
             Classe Person -> define uma classe abstrata de pessoa
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Person.Id">
+        <member name="P:UnBCineFlix.Models.Person.Id">
             <summary>
             identificador único de pessoa no banco de dados
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Person.Name">
+        <member name="P:UnBCineFlix.Models.Person.Name">
             <summary>
             Nome de uma pessoa
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Person.CPF">
+        <member name="P:UnBCineFlix.Models.Person.CPF">
             <summary>
             CPF de pessoa
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Person.TelePhone">
+        <member name="P:UnBCineFlix.Models.Person.TelePhone">
             <summary>
             telefone da pessoa
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Person.BirthDay">
+        <member name="P:UnBCineFlix.Models.Person.BirthDay">
             <summary>
             Data de aniversário da pessoa
             </summary>
         </member>
-        <member name="T:UnBCineFlix.Model.Rating">
+        <member name="T:UnBCineFlix.Models.Rating">
             <summary>
             G – General Audiences - All ages admitted.Nothing that would offend parents for viewing by children.
             PG – Parental Guidance Suggested - Some material may not be suitable for children.Parents urged to give "parental guidance". May contain some material parents might not like for their young children.
@@ -274,27 +274,27 @@
             NR 18 - Não recomendado para menores de 18 anos.
             </summary>
         </member>
-        <member name="T:UnBCineFlix.Model.Session">
+        <member name="T:UnBCineFlix.Models.Session">
             <summary>
             classe Session -> define uma sessão de cinema
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Session.Id">
+        <member name="P:UnBCineFlix.Models.Session.Id">
             <summary>
             id da sessão no sistema de banco de dados
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Session.SessionDay">
+        <member name="P:UnBCineFlix.Models.Session.SessionDay">
             <summary>
             Dia e hora da sessão do filme
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Session.MovieTheater">
+        <member name="P:UnBCineFlix.Models.Session.MovieTheater">
             <summary>
             Sala na qual a sessão irá acontecer
             </summary>
         </member>
-        <member name="P:UnBCineFlix.Model.Session.Movie">
+        <member name="P:UnBCineFlix.Models.Session.Movie">
             <summary>
             Filme a ser exibido na sessão
             </summary>

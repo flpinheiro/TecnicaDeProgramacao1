@@ -2,7 +2,7 @@
 using System.Text;
 using System;
 
-namespace UnBCineFlix.Model
+namespace UnBCineFlix.Models
 {
     /// <summary>
     /// Classe MovieTheater -> define uma sala de cinema

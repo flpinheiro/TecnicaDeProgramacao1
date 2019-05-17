@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace UnBCineFlix.Model
+namespace UnBCineFlix.Models
 {
     /// <summary>
     /// Classe Artist -> define um artista que participa de um filme, ou um diretor.

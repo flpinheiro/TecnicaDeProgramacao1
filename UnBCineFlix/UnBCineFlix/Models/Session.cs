@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace UnBCineFlix.Model
+namespace UnBCineFlix.Models
 {
     /// <summary>
     /// classe Session -> define uma sessão de cinema

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace UnBCineFlix.Model
+namespace UnBCineFlix.Models
 {
     /// <summary>
     /// G – General Audiences - All ages admitted.Nothing that would offend parents for viewing by children.

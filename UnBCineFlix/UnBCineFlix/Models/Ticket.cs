@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace UnBCineFlix.Model
+namespace UnBCineFlix.Models
 {
-    class Ticket
+    public class Ticket
     {
         public int TicketNumber { get; set; }
         public float Value { get; set; }

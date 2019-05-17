@@ -1,5 +1,5 @@
 ﻿using System;
-using UnBCineFlix.Model;
+using UnBCineFlix.Models;
 
 namespace UnBCineFlix
 {
@@ -25,7 +25,6 @@ namespace UnBCineFlix
             movie.DirectorList.Add(new Artist("Andy Muschietti"));
             Console.WriteLine(movie);
             Console.WriteLine("UnB Cine Flix");
-            
         }
     }
 }
