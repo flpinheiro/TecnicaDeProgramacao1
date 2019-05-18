@@ -31,9 +31,8 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
+                    <li><a asp-area="" asp-controller="MovieTheater" asp-action="Index">Movie Theater</a></li>
                     
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -46,6 +45,12 @@
         <hr />
         <footer>
             <p>&copy; 2019 - UnBCineFlixMvc</p>
+            <nav class="nav">
+                <ul>
+                    <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="About">About</a></li>
+                    <li><a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                </ul>
+            </nav>
         </footer>
     </div>
 

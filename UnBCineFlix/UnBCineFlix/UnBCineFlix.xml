@@ -14,6 +14,46 @@
             identificador da classe no banco de dados
             </summary>
         </member>
+        <member name="P:UnBCineFlix.Models.Address.Country">
+            <summary>
+            Pais no qual o endereço está localizado
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Models.Address.State">
+            <summary>
+            Estado no qual o endereço está localizado
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Models.Address.City">
+            <summary>
+            Cidade no qual o endereço está localizado
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Models.Address.District">
+            <summary>
+            Bairro no qual o endreço está localizado
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Models.Address.Complement">
+            <summary>
+            Complementos do endereço
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Models.Address.Number">
+            <summary>
+            Numero da rua do endereço
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Models.Address.ZipCode">
+            <summary>
+            Cep do endereço
+            </summary>
+        </member>
+        <member name="P:UnBCineFlix.Models.Address.Street">
+            <summary>
+            Rua na qual o endereço está localizado
+            </summary>
+        </member>
         <member name="T:UnBCineFlix.Models.Artist">
             <summary>
             Classe Artist -> define um artista que participa de um filme, ou um diretor.

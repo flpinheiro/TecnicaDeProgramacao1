@@ -20,7 +20,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="microsoft.NETCore" Version="5.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.1.0" />
   </ItemGroup>
 
 </Project>

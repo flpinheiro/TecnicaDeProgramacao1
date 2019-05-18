@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using UnBCineFlix.DAL;
+using Microsoft.EntityFrameworkCore;
 
 namespace UnBCineFlixMvc
 {
@@ -32,7 +33,9 @@ namespace UnBCineFlixMvc
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<UnBCineFlixContext>();
+            var connection = Configuration["ConexaoMySql:MySqlConnectionString"]; ;
+            services.AddDbContext<UnBCineFlixContext>(options =>
+                options.UseMySQL(connection));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
 
